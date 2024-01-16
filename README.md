@@ -32,8 +32,10 @@ WebBlock Post Creator es una aplicación web en React para crear y compartir pub
 
 ```bash
   1.- Clonar - https://github.com/RoneyCBR/WebBlogApi.git
-  2.- En una terminal Ejecutar - cd WebBlogApi
-  3.- En la misma terminal Ejecutar - docker-compose up
+  2.- Ejecuar apliacion Docker Desktop
+  Una vez en ejecucion, realizar!.
+  3.- En una terminal Ejecutar - cd WebBlogApi
+  4.- En la misma terminal Ejecutar - docker-compose up
 ```
 
 ## Comandos para Docker
