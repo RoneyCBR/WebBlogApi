@@ -1,0 +1,40 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:latest
+    container_name: webblogPs
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: webblog_user
+      POSTGRES_PASSWORD: webblog_user
+      POSTGRES_DB: webblog
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./webblog.sql:/docker-entrypoint-initdb.d/webblog.sql
+    networks:
+      - webblog-net
+
+  node_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      DB_HOST: postgres
+      POSTGRES_USER: webblog_user
+      POSTGRES_PASSWORD: webblog_user
+      DB_NAME: webblog
+    networks:
+      - webblog-net
+
+networks:
+  webblog-net:
+    driver: bridge
+
+volumes:
+  pg_data:
