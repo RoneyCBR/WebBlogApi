@@ -1,9 +1,8 @@
 
-# WebBlogApi
+# WebBlog
 
 ## Descripción:
 WebBlock Post Creator es una aplicación web en React para crear y compartir publicaciones personalizadas. Sube fácilmente títulos, autores y descripciones.
-
 
 ## Authors
 
@@ -24,7 +23,8 @@ WebBlock Post Creator es una aplicación web en React para crear y compartir pub
 
 ```bash
   1.- Clonar - https://github.com/RoneyCBR/WebBlog.git
-  2.- En una terminal Ejecutar - npm install
+  2.- En una terminal Ejecutar - cd WebBlog
+  2.- En la misma terminal Ejecutar - npm install
   3.- En la misma terminal Ejecutar - npm start
 ```
 
@@ -32,7 +32,8 @@ WebBlock Post Creator es una aplicación web en React para crear y compartir pub
 
 ```bash
   1.- Clonar - https://github.com/RoneyCBR/WebBlogApi.git
-  2.- En una terminal Ejecutar - docker-compose up
+  2.- En una terminal Ejecutar - cd WebBlogApi
+  3.- En la misma terminal Ejecutar - docker-compose up
 ```
 
 ## Comandos para Docker
@@ -43,4 +44,6 @@ WebBlock Post Creator es una aplicación web en React para crear y compartir pub
   3.- detener contenedor - docker-compose down
   4.- detener contenedor y eliminar bd - docker-compose down -v
 ```
+    
+
     
